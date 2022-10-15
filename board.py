@@ -23,7 +23,7 @@ def display_board(rows):
   RETURNS:
     print(board) (function): prints visualisation of a board
   '''
-  separator = '---+---+---'
+  separator = '───┼───┼───'
   board = f'   A   B   C\n1  {rows[0]} | {rows[1]} | {rows[2]}\n  {separator}\n2  {rows[3]} | {rows[4]} | {rows[5]}\n  {separator}\n3  {rows[6]} | {rows[7]} | {rows[8]}'
   return print(board)
   

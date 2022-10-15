@@ -1,5 +1,5 @@
 from board import display_board, get_empty_board, is_board_full, get_winning_player
-from coordinates import get_human_coordinates, get_random_ai_coord, get_smart_ai_coord, get_unbeatable_ai_coord
+from coordinates import get_human_coordinates, get_random_ai_coord, get_smart_ai_coord
 from menu import get_menu_option
 
 
