@@ -1,3 +1,4 @@
+import time
 from board import display_board, get_empty_board, is_board_full, get_winning_player
 from coordinates import get_human_coordinates, get_random_ai_coord, get_smart_ai_coord
 from menu import get_menu_option
@@ -102,6 +103,7 @@ def main():
                 if get_winning_player(rows) != player:
                     rows = get_random_ai_coord(player, rows)
                     provide_winner_or_tie(rows, player)
+                    time.sleep(2)
 
         if game_mode == HUMAN_VS_RANDOM_AI:
             if get_winning_player(rows) != player_1:
